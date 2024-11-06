@@ -1,0 +1,15 @@
+data:
+  ratio: 0.7
+  image_size: 224
+---
+train:
+  batch_size: 16
+  num_workers: 8
+  epochs: 100
+  optimizer: "Adam"
+  lr: 0.01
+  epsilon: 0.1
+---
+log:
+  project_name: "deepfake-disrupter-v9"
+  chkpt: "./checkpoints"
